@@ -1,0 +1,24 @@
+.NavBar {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.nav-items {
+  margin-left: 8px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 0 8px;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.company {
+  font-size: 1.5em;
+}
