@@ -1,6 +1,6 @@
 function Hotel() {
   return (
-    <div className='hotel'>
+    <div className='Hotel'>
       <div className='img-container'>
         <img className='hotel-img' src='sea_bay_hotel.jpg' alt='Sea Bay Hotel' />
       </div>
