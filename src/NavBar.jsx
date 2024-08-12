@@ -5,7 +5,7 @@ function NavBar() {
     <nav className='NavBar'>
       <ul className='nav-items'>
         <li className='nav-item'>
-          <a className='company nav-link'>Hotels.com</a>
+          <a href='/' className='company nav-link'>Hotels.com</a>
         </li>
         <li className='nav-item'>
           <a className='nav-link'>Support</a>
@@ -14,7 +14,7 @@ function NavBar() {
           <a className='nav-link'>Trips</a>
         </li>
         <li className='nav-item'>
-          <a className='nav-link' href="/signin">Sign in</a>
+          <a className='nav-link' href='/signin'>Sign in</a>
         </li>
       </ul>
     </nav>
