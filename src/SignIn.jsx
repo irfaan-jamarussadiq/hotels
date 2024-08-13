@@ -6,12 +6,12 @@ function SignIn() {
       <h1>Sign In</h1>
       <form className='sign-in-form'>
         <div className='form-field'>
-          <label className='form-label' htmlFor='username'>Username</label>
-          <input className='form-input' id='username' type="text" />
+          <label className='form-label' htmlFor='email'>Email</label>
+          <input className='form-input' id='email' type='email' placeholder='john.smith@example.com' />
         </div>
         <div className='form-field'>
           <label className='form-label' htmlFor='password'>Password</label>
-          <input className='form-input' id='password' type="password" />
+          <input className='form-input' id='password' type='password' />
         </div>
         <button className='sign-in-btn'>Sign in</button>
       </form>
