@@ -29,6 +29,23 @@ function Home() {
         <input className='form-input search-input' placeholder='Travelers' type='number' />
         <button className='search-btn' onClick={() => navigate('/hotel')}>Search</button>
       </form>
+      <div className='incentives'>
+        <div className='incentive-card incentive-prompt'>
+          <p>Find and book your perfect stay</p>
+        </div>
+        <div className='incentive-card'>
+          <img className='incentive-icon' src="lock.png" alt="Lock Icon" />
+          <p>Unlock travel rewards with One Key</p>
+        </div>
+        <div className='incentive-card'>
+          <img className='incentive-icon' src="save.png" alt="Save Icon" />
+          <p>Save more with Member Prices</p>
+        </div>
+        <div className='incentive-card'>
+          <img className='incentive-icon' src="calendar.png" alt="Calendar Icon" />
+          <p>Free cancellation options if plans change</p>
+        </div>
+      </div>
       <h2>Recommended stays for you</h2>
       <div className='stays-carousel'>
         {recommendedHotels.map(hotel => <HotelCard key={hotel.name} hotel={hotel} />)}

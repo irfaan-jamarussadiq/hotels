@@ -24,18 +24,6 @@
   border: none;
 }
 
-@media screen and (max-width: 480px) {
-  .location-search-form {
-    flex-direction: column;
-    border: none;
-  }
-
-  .search-input,
-  .search-btn {
-    margin: 8px;
-  }
-}
-
 .stays-carousel {
   display: flex;
 }
@@ -93,4 +81,51 @@
 
 .review-count {
   font-size: small;
+}
+
+.incentives {
+  width: 1000px;
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 1em;
+  display: flex;
+  color: white;
+  background-color: #e61e43;
+}
+
+.incentive-card {
+  display: flex;
+  width: 256px;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #8b142a;
+  margin-right: 8px;
+  padding: 8px;
+}
+
+.incentive-prompt {
+  font-size: 1.5em;
+  word-wrap: break-word;
+  background-color: #e61e43;
+}
+
+.incentive-icon {
+  max-height: 64px;
+  margin: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .location-search-form {
+    flex-direction: column;
+    border: none;
+  }
+
+  .search-input,
+  .search-btn {
+    margin: 8px;
+  }
+
+  .incentives {
+    display: none;
+  }
 }
