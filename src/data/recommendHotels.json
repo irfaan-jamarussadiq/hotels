@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Days Inn by Wyndham Newark Wilmington",
+    "location": "Newark",
+    "img": "wyndham.jpg",
+    "rating": "7.0",
+    "reviewCount": "1,000"
+  },
+  {
+    "name": "Best Western Plus Newark/Christiana Inn",
+    "location": "Bear",
+    "img": "best-western.jpg",
+    "rating": "6.0",
+    "reviewCount": "1,007"
+  }
+]

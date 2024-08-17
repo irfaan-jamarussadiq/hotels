@@ -28,61 +28,6 @@
   display: flex;
 }
 
-.hotel-card {
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid black;
-  margin-right: 16px;
-}
-
-.hotel-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 256px;
-  height: 256px;
-}
-
-.hotel-img-container {
-  height: 128px;
-  overflow: hidden;
-}
-
-.hotel-card .hotel-img {
-  width: 100%;
-}
-
-.hotel-details {
-  padding: 8px;
-}
-
-.hotel-card-title {
-  margin: 0;
-  margin-bottom: 2px;
-}
-
-.hotel-rating {
-  display: flex;
-  align-items: center;
-  padding: 6px 8px;
-}
-
-.numeric-rating {
-  font-size: small;
-  background-color: lightgray;
-  padding: 4px;
-  margin-right: 4px;
-}
-
-.label-rating {
-  font-weight: bold;
-  margin-right: 4px;
-}
-
-.review-count {
-  font-size: small;
-}
-
 .incentives {
   width: 1000px;
   border-radius: 8px;

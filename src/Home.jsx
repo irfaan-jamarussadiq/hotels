@@ -1,75 +1,60 @@
 import { useNavigate } from 'react-router-dom'
+import recommendedHotels from './data/recommendHotels.json'
+import HotelCard from './HotelCard'
 import './Home.css'
 
-const recommendedHotels = [
-  {
-    "name": "Days Inn by Wyndham Newark Wilmington",
-    "location": "Newark",
-    "img": "wyndham.jpg",
-    "rating": "7.0",
-    "reviewCount": "1,000"
-  },
-  {
-    "name": "Best Western Plus Newark/Christiana Inn",
-    "location": "Bear",
-    "img": "best-western.jpg",
-    "rating": "6.0",
-    "reviewCount": "1,007"
-  },
-]
-
 function Home() {
-  const navigate = useNavigate()
-
   return (
     <div>
-      <form className='location-search-form'>
-        <input className='form-input search-input' placeholder='Where To?' type='search' />
-        <input className='form-input search-input' type='date' />
-        <input className='form-input search-input' placeholder='Travelers' type='number' />
-        <button className='search-btn' onClick={() => navigate('/hotel')}>Search</button>
-      </form>
-      <div className='incentives'>
-        <div className='incentive-card incentive-prompt'>
-          <p>Find and book your perfect stay</p>
-        </div>
-        <div className='incentive-card'>
-          <img className='incentive-icon' src="lock.png" alt="Lock Icon" />
-          <p>Unlock travel rewards with One Key</p>
-        </div>
-        <div className='incentive-card'>
-          <img className='incentive-icon' src="save.png" alt="Save Icon" />
-          <p>Save more with Member Prices</p>
-        </div>
-        <div className='incentive-card'>
-          <img className='incentive-icon' src="calendar.png" alt="Calendar Icon" />
-          <p>Free cancellation options if plans change</p>
-        </div>
-      </div>
-      <h2>Recommended stays for you</h2>
-      <div className='stays-carousel'>
-        {recommendedHotels.map(hotel => <HotelCard key={hotel.name} hotel={hotel} />)}
-      </div>
+      <HotelSearch />
+      <ValuePropositionBanner />
+      <RecommendedStays />
     </div>
   )
 }
 
-function HotelCard({ hotel }) {
+function HotelSearch() {
+  const navigate = useNavigate()
   return (
-    <div className='hotel-card'>
-      <div className='hotel-img-container'>
-        <img className='hotel-img' src={hotel.img} alt={hotel.name} />
+    <form className='location-search-form'>
+      <input className='form-input search-input' placeholder='Where To?' type='search' />
+      <input className='form-input search-input' type='date' />
+      <input className='form-input search-input' placeholder='Travelers' type='number' />
+      <button className='search-btn' onClick={() => navigate('/hotel')}>Search</button>
+    </form>
+  )
+}
+
+function ValuePropositionBanner() {
+  return (
+    <section className='incentives'>
+      <div className='incentive-card incentive-prompt'>
+        <p>Find and book your perfect stay</p>
       </div>
-      <div className='hotel-details'>
-        <h3 className='hotel-card-title'>{hotel.name}</h3>
-        <div className='hotel-card-subtitle'>{hotel.location}</div>
+      <div className='incentive-card'>
+        <img className='incentive-icon' src="lock.png" alt="Lock Icon" />
+        <p>Unlock travel rewards with One Key</p>
       </div>
-      <div className='hotel-rating'>
-        <span className='numeric-rating'>{hotel.rating}</span>
-        <span className='label-rating'> Good </span>
-        <span className='review-count'>({hotel.reviewCount} reviews)</span>
+      <div className='incentive-card'>
+        <img className='incentive-icon' src="save.png" alt="Save Icon" />
+        <p>Save more with Member Prices</p>
       </div>
-    </div>
+      <div className='incentive-card'>
+        <img className='incentive-icon' src="calendar.png" alt="Calendar Icon" />
+        <p>Free cancellation options if plans change</p>
+      </div>
+    </section>
+  )
+}
+
+function RecommendedStays() {
+  return (
+    <section>
+      <h2>Recommended stays for you</h2>
+      <div className='stays-carousel'>
+        {recommendedHotels.map(hotel => <HotelCard key={hotel.name} hotel={hotel} />)}
+      </div>
+    </section>
   )
 }
 
