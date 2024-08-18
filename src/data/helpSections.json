@@ -1,0 +1,146 @@
+[
+  {
+    "section": "Refunds & Charges",
+    "icon": "money.png",
+    "links": [
+      {
+        "href": "refunds",
+        "description": "Refund timelines, policies & processes"
+      },
+      {
+        "href": "receipts",
+        "description": "Get a receipt for your booking"
+      },
+      {
+        "href": "payments",
+        "description": "Payment security & options"
+      }
+    ],
+    "moreLink": "more-refunds"
+  },
+  {
+    "section": "Lodging",
+    "icon": "lodging.png",
+    "links": [
+      {
+        "href": "change-stay",
+        "description": "Change your hotel or vacation rental booking"
+      },
+      {
+        "href": "cancel-stay",
+        "description": "Cancel your hotel or vacation rental booking"
+      },
+      {
+        "href": "check-in-out",
+        "description": "Check in and check out of your hotel or vacation rental"
+      }
+    ],
+    "moreLink": "more-lodging"
+  },
+  {
+    "section": "Car",
+    "icon": "car.png",
+    "links": [
+      {
+        "href": "change-car",
+        "description": "Change or cancel your car rental"
+      },
+      {
+        "href": "view-car",
+        "description": "View your booking"
+      },
+      {
+        "href": "car-price-quotes",
+        "description": "Car rental price quotes"
+      }
+    ],
+    "moreLink": "more-cars"
+  },
+  {
+    "section": "Account",
+    "icon": "account.png",
+    "links": [
+      {
+        "href": "account-booking",
+        "description": "View your booking"
+      },
+      {
+        "href": "account-info",
+        "description": "Correct or update your account information"
+      },
+      {
+        "href": "account-changes",
+        "description": "Changes to your account"
+      }
+    ],
+    "moreLink": "more-account"
+  },
+  {
+    "section": "Privacy",
+    "icon": "privacy.png",
+    "links": [
+      {
+        "href": "privacy-info",
+        "description": "Correct or update your account information"
+      },
+      {
+        "href": "about-privacy",
+        "description": "Information about your privacy"
+      },
+      {
+        "href": "privacy-rights",
+        "description": "What privacy and data subject rights are available?"
+      }
+    ],
+    "moreLink": "more-privacy"
+  },
+  {
+    "section": "Security",
+    "icon": "security.png",
+    "links": [
+      {
+        "href": "payment-security",
+        "description": "Payment security & options"
+      },
+      {
+        "href": "phone-scams",
+        "description": "Beware of phone call scams"
+      },
+      {
+        "href": "email-scams",
+        "description": "Beware of email scams (phishing)"
+      }
+    ],
+    "moreLink": "more-security"
+  },
+  {
+    "section": "Loyalty & Rewards",
+    "icon": "loyalty.png",
+    "links": [
+      {
+        "href": "one-key-cards",
+        "description": "One Key Credit Cards"
+      },
+      {
+        "href": "about-rewards-card",
+        "description": "About Hotels Rewards Credit Card"
+      },
+      {
+        "href": "about-one-key",
+        "description": "What is One Key?"
+      }
+    ],
+    "moreLink": "more-rewards"
+  },
+  {
+    "section": "Travel Alerts",
+    "icon": "travel.png",
+    "links": [
+      {
+        "href": "travel-alerts",
+        "description": "Bad weather and travel disruptions"
+      }
+    ],
+    "moreLink": "more-travel"
+  }
+]

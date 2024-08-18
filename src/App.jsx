@@ -4,6 +4,7 @@ import SignIn from './SignIn'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './Home'
+import HelpCenter from './HelpCenter'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/hotel' element={<Hotel />} />
           <Route path='/signin' element={<SignIn />} />
+          <Route path='/help' element={<HelpCenter />} />
         </Routes>
       </Router>
     </div>

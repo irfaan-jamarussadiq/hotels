@@ -8,7 +8,7 @@ function NavBar() {
           <a href='/' className='company nav-link'>Hotels.com</a>
         </li>
         <li className='nav-item'>
-          <a className='nav-link'>Support</a>
+          <a className='nav-link' href='/help'>Support</a>
         </li>
         <li className='nav-item'>
           <a className='nav-link'>Trips</a>
