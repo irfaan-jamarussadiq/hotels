@@ -80,7 +80,7 @@ function RecommendedStays() {
       </div>
       <div className='more-stays'>
         <a className='more-stays-link' href="/more-recommended-stays">
-          See more recommended stays &gt;
+          See all properties &gt;
         </a>
       </div>
     </section>

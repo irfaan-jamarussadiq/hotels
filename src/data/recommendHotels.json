@@ -12,5 +12,19 @@
     "img": "best-western.jpg",
     "rating": "6.0",
     "reviewCount": "1,007"
+  },
+  {
+    "name": "SureStay Plus Hotel by Best Western Brandywine Valley",
+    "location": "Wilmington",
+    "img": "sure-stay.jpg",
+    "rating": "6.4",
+    "reviewCount": "1,006"
+  },
+  {
+    "name": "Sonesta Select Newark Christiana Mall",
+    "location": "Newark",
+    "img": "sonesta.jpg",
+    "rating": "7.8",
+    "reviewCount": "1,002"
   }
 ]
