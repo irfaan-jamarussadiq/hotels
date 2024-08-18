@@ -1,7 +1,8 @@
+import recommendedHotels from '../data/recommendHotels.json'
+import favoriteStays from '../data/favoriteStays.json'
+import HotelCard from '../components/HotelCard'
+import FavoriteStayCard from '../components/FavoriteStayCard'
 import { useNavigate } from 'react-router-dom'
-import recommendedHotels from './data/recommendHotels.json'
-import favoriteStays from './data/favoriteStays.json'
-import HotelCard from './HotelCard'
 import './Home.css'
 
 function Home() {
@@ -57,17 +58,6 @@ function FavoriteStays() {
         {favoriteStays.map(stay => <FavoriteStayCard key={stay.name} favoriteStay={stay} />)}
       </div>
     </section>
-  )
-}
-
-function FavoriteStayCard({ favoriteStay }) {
-  return (
-    <div className='favorite-stay-card'>
-      <div className='stay-img-container'>
-        <img className='stay-img' src={favoriteStay.img} alt={favoriteStay.name} />
-      </div>
-      <div className='stay-card-title'>{favoriteStay.name}</div>
-    </div>
   )
 }
 

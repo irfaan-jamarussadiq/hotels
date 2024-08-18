@@ -1,22 +1,24 @@
+import './Hotel.css'
+
 function Hotel() {
   return (
-    <div className='Hotel'>
-      <div className='img-container'>
+    <div className='hotel'>
+      <div className='hotel-img-container'>
         <img className='hotel-img' src='sea_bay_hotel.jpg' alt='Sea Bay Hotel' />
       </div>
       <h1>Sea Bay Hotel</h1>
       <div role='doc-subtitle'>Hotel with restaurant, near Ocean City Beach</div>
-      <div className='rating'>
+      <div className='hotel-rating'>
         <span className='quantitative-rating'>8.0</span>
         <span className='qualitative-rating'> Very Good</span>
       </div>
-      <a href='/reviews' className='reviews-link'>See all 341 reviews &gt;</a>
+      <a href='/reviews' className='hotel-reviews-link'>See all 341 reviews &gt;</a>
       <h2>Highlights</h2>
-      <div className='highlights'>
+      <div className='hotel-highlights'>
         <img className='icon walking-person' src='walker.png' alt='Hotel Hightlights' />
         <span>Near Seacrets Distilling Company</span>
       </div>
-      <ul className='amenities'>
+      <ul className='hotel-amenities'>
         <li>Pool</li>
         <li>Free Parking</li>
         <li>Laundry Facilities</li>

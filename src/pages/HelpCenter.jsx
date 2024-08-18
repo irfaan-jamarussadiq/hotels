@@ -1,4 +1,4 @@
-import helpSections from './data/helpSections.json'
+import helpSections from '../data/helpSections.json'
 import './HelpCenter.css'
 
 function HelpCenter() {

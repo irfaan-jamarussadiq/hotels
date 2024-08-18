@@ -1,10 +1,9 @@
-import Hotel from './Hotel'
-import NavBar from './NavBar'
-import SignIn from './SignIn'
+import Hotel from './components/Hotel'
+import NavBar from './components/NavBar'
+import SignIn from './pages/SignIn'
+import Home from './pages/Home'
+import HelpCenter from './pages/HelpCenter'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Home from './Home'
-import HelpCenter from './HelpCenter'
 
 function App() {
   return (
