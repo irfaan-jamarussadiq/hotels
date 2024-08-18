@@ -129,4 +129,9 @@
   .incentives {
     display: none;
   }
+
+  .favorite-stay-card,
+  .stay-img-container {
+    height: 256px;
+  }
 }

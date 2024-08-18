@@ -23,3 +23,9 @@
 .company {
   font-size: 1.5em;
 }
+
+@media screen and (max-width: 480px) {
+  .NavBar {
+    padding: 0;
+  }
+}
