@@ -10,7 +10,7 @@ function HotelCard({ hotel }) {
         <h3 className='hotel-card-title'>{hotel.name}</h3>
         <div className='hotel-card-subtitle'>{hotel.location}</div>
       </div>
-      <div className='hotel-rating'>
+      <div className='hotel-card-rating'>
         <span className='numeric-rating'>{hotel.rating}</span>
         <span className='label-rating'> Good </span>
         <span className='review-count'>({hotel.reviewCount} reviews)</span>
