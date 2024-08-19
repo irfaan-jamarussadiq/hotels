@@ -11,7 +11,7 @@ function NavBar() {
           <a className='nav-link' href='/help'>Support</a>
         </li>
         <li className='nav-item'>
-          <a className='nav-link'>Trips</a>
+          <a className='nav-link' href='/trips'>Trips</a>
         </li>
         <li className='nav-item'>
           <a className='nav-link' href='/signin'>Sign in</a>

@@ -1,0 +1,50 @@
+.trips {
+  display: flex;
+  flex-direction: column;
+  padding: 0 512px;
+}
+
+.trips-img {
+  width: 256px;
+}
+
+.sign-in-prompt,
+.account-question {
+  font-weight: bold;
+  margin: 0;
+}
+
+.trip-sign-in-btn {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 8px 0;
+  padding: 16px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 4rem;
+}
+
+.account-prompt,
+.trip-incentives {
+  margin: 4px 0;
+}
+
+.create-account {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.account-link-container {
+  margin-left: auto;
+  padding: 16px;
+}
+
+.account-link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
