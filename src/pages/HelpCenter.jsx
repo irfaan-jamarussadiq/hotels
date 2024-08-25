@@ -1,7 +1,23 @@
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import helpSections from '../data/helpSections.json'
 import './HelpCenter.css'
+import Modal from '../components/Modal'
 
 function HelpCenter() {
+  const [open, setOpen] = useState(false)
+  const navigate = useNavigate()
+
+  function openModal(link) {
+    setOpen(true)
+    navigate(link.href, { state: { "title": link.description } })
+  }
+
+  function closeModal() {
+    setOpen(false)
+    navigate("/help")
+  }
+
   return (
     <div className='help-center'>
       <h1 className='title'>Welcome to Help Center</h1>
@@ -16,15 +32,17 @@ function HelpCenter() {
             <HelpSectionCard
               key={section.section}
               helpSection={section}
+              openModal={openModal}
             />
           ))}
         </div>
       </div>
+      {open && <Modal onClose={closeModal} />}
     </div>
   )
 }
 
-function HelpSectionCard({ helpSection }) {
+function HelpSectionCard({ helpSection, openModal }) {
   return (
     <div className='help-section-card'>
       <div className='help-section-header'>
@@ -35,7 +53,7 @@ function HelpSectionCard({ helpSection }) {
       <ul className='help-links'>
         {helpSection.links.map(link => (
           <li key={link.href} className='help-link-item'>
-            <a className='help-link'>{link.description} &gt;</a>
+            <button className='help-link' onClick={() => openModal(link)}>{link.description} &gt;</button>
           </li>
         ))}
       </ul>
