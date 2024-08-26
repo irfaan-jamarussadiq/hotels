@@ -15,11 +15,16 @@ function Modal({ onClose, children }) {
           <div className='explore-help-text'>Explore help articles</div>
         </div>
         <h1>{title}</h1>
+        <hr className='separator' />
         {children}
         <div className='modal-feedback'>
           <h3>Was this helpful?</h3>
-          <img className='feedback-icon' src='/like.png' alt='Feedback was helpful' />
-          <img className='feedback-icon' src='/dislike.png' alt='Feedback was not helpful' />
+          <button className='feedback-btn'>
+            <img className='feedback-icon' src='/like.png' alt='Feedback was helpful' />
+          </button>
+          <button className='feedback-btn'>
+            <img className='feedback-icon' src='/dislike.png' alt='Feedback was not helpful' />
+          </button>
         </div>
       </div>
     </div>
