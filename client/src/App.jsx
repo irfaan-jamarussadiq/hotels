@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Hotel from './components/Hotel'
 import Trips from './pages/Trips'
 import SignIn from './pages/SignIn'
-import HelpCenter from './pages/HelpCenter'
+import HelpCenter from './pages/help-center/HelpCenter'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import helpSections from '../data/helpSections.json'
+import helpSections from '../../data/helpSections.json'
 import './HelpCenter.css'
-import Modal from '../components/Modal'
+import Modal from '../../components/Modal'
 
 function HelpCenter() {
   const [open, setOpen] = useState(false)
