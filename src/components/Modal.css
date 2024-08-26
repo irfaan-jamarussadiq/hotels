@@ -1,3 +1,33 @@
+.dialog-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  position: absolute;
+  width: 800px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#dialog {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
 .modal-close {
   display: flex;
   align-items: center;
@@ -27,4 +57,5 @@
 
 .feedback-icon {
   height: 24px;
+  margin: 0 4px;
 }
