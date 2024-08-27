@@ -1,10 +1,7 @@
-import { useLocation } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import './Modal.css'
 
-function Modal({ onClose, children }) {
-  const location = useLocation()
-  const title = location.state.title
-
+function Modal({ onClose }) {
   return (
     <div className='dialog-wrapper'>
       <div className='modal' id='dialog'>
@@ -14,9 +11,8 @@ function Modal({ onClose, children }) {
           </button>
           <div className='explore-help-text'>Explore help articles</div>
         </div>
-        <h1>{title}</h1>
         <hr className='separator' />
-        {children}
+        <Outlet />
         <div className='modal-feedback'>
           <h3>Was this helpful?</h3>
           <button className='feedback-btn'>

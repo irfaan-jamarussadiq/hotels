@@ -10,7 +10,7 @@ function HelpCenter() {
 
   function openModal(link) {
     setOpen(true)
-    navigate(link.href, { state: { "title": link.description } })
+    navigate(link.href)
   }
 
   function closeModal() {
