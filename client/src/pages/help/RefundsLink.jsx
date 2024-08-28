@@ -1,3 +1,5 @@
+import './LinkPages.css'
+
 function RefundsLink() {
   return (
     <div>
@@ -20,6 +22,21 @@ function RefundsLink() {
       <h3>Nonrefundable bookings</h3>
       <p>Some bookings are non-refundable. When you cancel, you simply won't receive a refund. Just a heads-up that the hotel or vacation rental may charge you an additional cancellation fee.</p>
       <hr className='separator' />
+      <div className='more-about-content'>
+        <div>More about: </div>
+        <div className='more-links'>
+          <a className='more-link' href='payments-references'>
+            <img className='more-icon' src='/more.png' />
+            <span>Payments, </span>
+          </a>
+        </div>
+        <div className='more-links'>
+          <a className='more-link' href='refunds/refunds-references'>
+            <img className='more-icon' src='/more.png' />
+            <span>Refunds</span>
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

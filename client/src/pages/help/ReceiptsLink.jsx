@@ -1,4 +1,4 @@
-import './ReceiptsLink.css'
+import './LinkPages.css'
 
 function ReceiptsLink() {
   return (
@@ -27,7 +27,23 @@ function ReceiptsLink() {
       <ul>
         <li><span className='prompt-bold'>For package bookings:</span> While the receipt you get from the itinerary page shows the total amount you paid, your bank or credit card statement may show separate charges for each package item (flight, hotel, etc.).</li>
       </ul>
+
       <hr className='separator' />
+
+      <div className='more-about-content'>
+        <span>More about: </span>
+
+        <span className='more-links'>
+          <img className='more-icon' src='/more.png' />
+          <a href='payments-references'>Payments</a>
+          <span>, </span>
+        </span>
+
+        <span className='more-links'>
+          <img className='more-icon' src='/more.png' />
+          <a href='bookings-references'>Bookings</a>
+        </span>
+      </div>
     </div>
   )
 }
