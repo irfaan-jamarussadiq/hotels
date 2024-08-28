@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './LinkPages.css'
 
 function RefundsLink() {
@@ -25,16 +26,16 @@ function RefundsLink() {
       <div className='more-about-content'>
         <div>More about: </div>
         <div className='more-links'>
-          <a className='more-link' href='payments-references'>
+          <Link className='more-link' to='payments-references'>
             <img className='more-icon' src='/more.png' />
             <span>Payments, </span>
-          </a>
+          </Link>
         </div>
         <div className='more-links'>
-          <a className='more-link' href='refunds/refunds-references'>
+          <Link className='more-link' to='refunds-references'>
             <img className='more-icon' src='/more.png' />
             <span>Refunds</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

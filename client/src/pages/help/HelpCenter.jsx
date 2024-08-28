@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import helpSections from '../../data/helpSections.json'
 import './HelpCenter.css'
 import Modal from '../../components/Modal'
@@ -7,11 +7,6 @@ import Modal from '../../components/Modal'
 function HelpCenter() {
   const [open, setOpen] = useState(false)
   const navigate = useNavigate()
-
-  function openModal(link) {
-    setOpen(true)
-    navigate(link.href)
-  }
 
   function closeModal() {
     setOpen(false)
@@ -29,11 +24,7 @@ function HelpCenter() {
         </form>
         <div className='help-section-cards'>
           {helpSections.map(section => (
-            <HelpSectionCard
-              key={section.section}
-              helpSection={section}
-              openModal={openModal}
-            />
+            <HelpSectionCard key={section.section} helpSection={section} openModal={() => setOpen(true)} />
           ))}
         </div>
       </div>
@@ -53,14 +44,14 @@ function HelpSectionCard({ helpSection, openModal }) {
       <ul className='help-links'>
         {helpSection.links.map(link => (
           <li key={link.href} className='help-link-item'>
-            <button className='help-link' onClick={() => openModal(link)}>{link.description} &gt;</button>
+            <Link className='help-link' to={link.href} onClick={openModal}>{link.description} &gt;</Link>
           </li>
         ))}
       </ul>
       <hr className='separator' />
       <div className='more-options'>
         <img className='more-icon' src='/more.png' alt='More Options' />
-        <a className='help-link' href={helpSection.moreLink}>More &gt;</a>
+        <Link className='help-link' to={helpSection.moreLink}>More &gt;</Link>
       </div>
     </div>
   )
