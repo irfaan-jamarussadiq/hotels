@@ -1,0 +1,22 @@
+.prompt-bold {
+  font-weight: bold;
+}
+
+.more-about-content {
+  display: flex;
+}
+
+.more-links {
+  margin-left: 4px;
+}
+
+.more-link {
+  display: flex;
+  align-items: center;
+}
+
+.more-icon {
+  margin-right: 4px;
+  height: 16px;
+  width: 16px;
+}
